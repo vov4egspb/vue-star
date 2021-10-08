@@ -11,21 +11,13 @@
   "directories": {
     "vue": "vue"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://devrepo.icecorp.ru/frontend/npmpackages/vue/components/ice-cmp-rating-star"
-  },
   "author": "v.georgiev",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "http://verdaccio.icecorp.ru/"
-  },
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
     "predeploy": "vue-cli-service build --mode demo",
     "build": "vue-cli-service build --target lib --name rating src/lib.js",
     "lint": "vue-cli-service lint",
-    "pushnpm": "./publish.sh"
   },
   "dependencies": {
     "core-js": "^3.15.0",
