@@ -1,0 +1,47 @@
+{
+  "name": "ice-cmp-rating-star",
+  "version": "0.2.0",
+  "main": "./lib/rating.common.js",
+  "description": "Vue.js component rating star",
+  "keywords": [
+    "vue",
+    "component",
+    "rating"
+  ],
+  "directories": {
+    "vue": "vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://devrepo.icecorp.ru/frontend/npmpackages/vue/components/ice-cmp-rating-star"
+  },
+  "author": "v.georgiev",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://verdaccio.icecorp.ru/"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve --port 3000",
+    "predeploy": "vue-cli-service build --mode demo",
+    "build": "vue-cli-service build --target lib --name rating src/lib.js",
+    "lint": "vue-cli-service lint",
+    "pushnpm": "./publish.sh"
+  },
+  "dependencies": {
+    "core-js": "^3.15.0",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.11.1",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.2.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
